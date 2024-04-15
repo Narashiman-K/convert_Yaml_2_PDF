@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAApklEQVR42mP8/w/h7do5ODi0sgcFD1C3GJgNIAseAoEMhg9OBgxYIMgZApUIACQJxWk2EMAAAAASUVORK5CYII=" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css">
+  <title>YAML to PDF Converter</title>
+</head>
+<body>
+  <div class="container">
+    <h1>YAML to PDF Converter</h1>
+    <input type="file" id="fileInput" accept=".yaml, .yml">
+    <button onclick="convertToPdf()">Convert to PDF</button>
+    <div id="pdfViewer"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.0.0/js-yaml.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/pdfmake.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/vfs_fonts.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
